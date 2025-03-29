@@ -2,67 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>AI 3D Timeline</title>
+    <title>AI 3D Timeline - Dark Theme</title>
     <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene background="color: #f0f0f0">
-      <a-camera position="0 1.6 6"></a-camera>
-      <a-light type="ambient" color="#888"></a-light>
-      <a-light type="directional" intensity="0.5" position="1 1 0"></a-light>
+    <a-scene background="color: #0b0f2b">
+      <a-assets>
+        <img id="img1" src="https://via.placeholder.com/300x200?text=1956+-+Birth+of+AI">
+        <img id="img2" src="https://via.placeholder.com/300x200?text=1958+-+LISP">
+        <img id="img3" src="https://via.placeholder.com/300x200?text=1965+-+ELIZA">
+        <img id="img4" src="https://via.placeholder.com/300x200?text=1986+-+Backprop">
+        <img id="img5" src="https://via.placeholder.com/300x200?text=1997+-+Deep+Blue">
+        <img id="img6" src="https://via.placeholder.com/300x200?text=2012+-+AlexNet">
+        <img id="img7" src="https://via.placeholder.com/300x200?text=2017+-+Transformer">
+        <img id="img8" src="https://via.placeholder.com/300x200?text=2020+-+GPT-3">
+        <img id="img9" src="https://via.placeholder.com/300x200?text=2023+-+GPT-4">
+        <img id="img10" src="https://via.placeholder.com/300x200?text=2025+-+Self-learning+Agents">
+      </a-assets>
 
-      <!-- AI Timeline Events -->
+      <a-camera position="0 1.6 5"></a-camera>
+      <a-light type="ambient" color="#fff" intensity="0.7"></a-light>
+      <a-light type="point" color="#88f" intensity="1.5" distance="20" position="0 3 5"></a-light>
+
+      <!-- Timeline Cards -->
       <a-entity position="0 1 -4">
-        <!-- Each event as a plane in 3D space -->
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #ffffff"
-                  text="value: 1956 - Birth of AI\nDartmouth Conference; align: center; wrapCount: 40"
-                  position="-10 5 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #e0f7fa"
-                  text="value: 1958 - LISP Language\nSymbolic AI begins; align: center; wrapCount: 40"
-                  position="-7 4 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #e8f5e9"
-                  text="value: 1965 - ELIZA Chatbot\nFirst NLP system; align: center; wrapCount: 40"
-                  position="-4 3 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #fff3e0"
-                  text="value: 1986 - Backpropagation\nGeoffrey Hinton; align: center; wrapCount: 40"
-                  position="-1 2 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #ede7f6"
-                  text="value: 1997 - Deep Blue beats Kasparov\nAI in games; align: center; wrapCount: 40"
-                  position="2 1 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #fce4ec"
-                  text="value: 2012 - AlexNet wins ImageNet\nDeep learning breakthrough; align: center; wrapCount: 40"
-                  position="5 0 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #f3e5f5"
-                  text="value: 2017 - Transformer architecture\nNLP revolution; align: center; wrapCount: 40"
-                  position="8 -1 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #e1f5fe"
-                  text="value: 2020 - GPT-3\nHuman-like text generation; align: center; wrapCount: 40"
-                  position="11 -2 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #fff9c4"
-                  text="value: 2023 - GPT-4\nMultimodal + reasoning; align: center; wrapCount: 40"
-                  position="14 -3 0"></a-entity>
-
-        <a-entity geometry="primitive: plane; height: 1.5; width: 3"
-                  material="color: #dcedc8"
-                  text="value: 2025 - Self-learning Agents\nAI with autonomy; align: center; wrapCount: 40"
-                  position="17 -4 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img1"
+                  position="-12 4 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img2"
+                  position="-9 3 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img3"
+                  position="-6 2 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img4"
+                  position="-3 1 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img5"
+                  position="0 0 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img6"
+                  position="3 -1 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img7"
+                  position="6 -2 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img8"
+                  position="9 -3 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img9"
+                  position="12 -4 0"></a-entity>
+        <a-entity geometry="primitive: plane; height: 2; width: 3"
+                  material="shader: flat; src: #img10"
+                  position="15 -5 0"></a-entity>
       </a-entity>
 
     </a-scene>
