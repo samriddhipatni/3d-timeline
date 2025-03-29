@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>3D Timeline</title>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-camera position="0 1.6 4"></a-camera>
+      <a-light type="ambient" color="#fff"></a-light>
+
+      <a-entity position="0 1 -4" rotation="0 45 0">
+        <a-entity geometry="primitive: plane; height: 1; width: 2"
+                  material="color: #FFF"
+                  text="value: 2020 - Started Marketing Career; align: center"
+                  position="-3 1 0"></a-entity>
+
+        <a-entity geometry="primitive: plane; height: 1; width: 2"
+                  material="color: #DFF"
+                  text="value: 2023 - Moved to US; align: center"
+                  position="0 1 0"></a-entity>
+
+        <a-entity geometry="primitive: plane; height: 1; width: 2"
+                  material="color: #FDD"
+                  text="value: 2025 - Started AI+Beauty YouTube Channel; align: center"
+                  position="3 1 0"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
